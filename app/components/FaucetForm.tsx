@@ -92,8 +92,8 @@ export default function FaucetForm() {
 
             {message && (
                 <div className={`mt-6 p-4 rounded-xl border-2 ${messageType === 'success'
-                        ? 'bg-green-50 border-green-200 text-green-800'
-                        : 'bg-red-50 border-red-200 text-red-800'
+                    ? 'bg-green-50 border-green-200 text-green-800'
+                    : 'bg-red-50 border-red-200 text-red-800'
                     }`}>
                     <p className="text-sm break-words leading-relaxed">{message}</p>
                 </div>
@@ -102,7 +102,7 @@ export default function FaucetForm() {
             <div className="mt-8 text-center">
                 <div className="inline-flex items-center space-x-2 bg-amber-100 border border-amber-200 rounded-full px-4 py-2">
                     <span className="text-amber-700 text-sm font-medium">
-                        💡 You can only request ETH once per hour per address
+                        💡 You can only request ETH once per minute per address
                     </span>
                 </div>
             </div>
