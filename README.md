@@ -59,32 +59,9 @@ npm install
 # or
 yarn install
 ```
-
-### 3. Environment Configuration
-
-Copy the example environment file and configure your settings:
-
-```bash
-cp env.example .env.local
 ```
 
-Edit `.env.local` with your configuration:
-
-```env
-# Ethereum Sepolia RPC URL (get from Infura, Alchemy, or other providers)
-NEXT_PUBLIC_SEPOLIA_RPC_URL=https://sepolia.infura.io/v3/YOUR_PROJECT_ID
-
-# Private key for the faucet wallet (this wallet will send ETH to users)
-FAUCET_PRIVATE_KEY=your_private_key_here
-
-# Amount of ETH to send per request (in wei, default: 1 ETH)
-FAUCET_AMOUNT_WEI=1000000000000000000
-
-# Cooldown period between requests (in seconds, default: 1 hour)
-FAUCET_COOLDOWN_SECONDS=3600
-```
-
-### 4. Fund Your Faucet Wallet
+### 3. Fund Your Faucet Wallet
 
 To get Sepolia ETH for your faucet wallet:
 
@@ -93,7 +70,7 @@ To get Sepolia ETH for your faucet wallet:
 3. Request test ETH (usually 0.5-1 ETH per request)
 4. Wait for the transaction to be confirmed
 
-### 5. Start Development Server
+### 4. Start Development Server
 
 ```bash
 npm run dev
