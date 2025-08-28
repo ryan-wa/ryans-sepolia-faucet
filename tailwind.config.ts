@@ -42,7 +42,7 @@ const config: Config = {
                     DEFAULT: "hsl(var(--card))",
                     foreground: "hsl(var(--card-foreground))",
                 },
-                // Add amber color palette explicitly
+                // Amber color palette 
                 amber: {
                     50: '#fffbeb',
                     100: '#fef3c7',

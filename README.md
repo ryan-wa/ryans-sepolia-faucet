@@ -219,3 +219,4 @@ If you encounter issues:
 - [Next.js Documentation](https://nextjs.org/docs)
 - [Ethers.js Documentation](https://docs.ethers.org/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
+

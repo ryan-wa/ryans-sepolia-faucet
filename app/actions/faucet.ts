@@ -25,9 +25,10 @@ export async function requestEth(address: string): Promise<FaucetResult> {
         // Check cooldown
         const now = Math.floor(Date.now() / 1000)
         const lastRequest = cooldownMap.get(address.toLowerCase())
-        const cooldownSeconds = parseInt(process.env.FAUCET_COOLDOWN_SECONDS || '3600')
+        const cooldownSeconds = parseInt(process.env.FAUCET_COOLDOWN_SECONDS || '60')
 
         if (lastRequest && (now - lastRequest) < cooldownSeconds) {
+            // get time till next refill
             const remainingTime = cooldownSeconds - (now - lastRequest)
             const minutes = Math.ceil(remainingTime / 60)
             return {
